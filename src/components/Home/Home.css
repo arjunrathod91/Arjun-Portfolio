@@ -1,0 +1,171 @@
+.hero {
+  height: calc(100vh - 130px);
+  width: 100vw;
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  position: relative;
+  justify-content: center;
+  display: flex;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.space-around {
+  justify-content: space-around;
+}
+.flex {
+  display: flex;
+}
+
+.leftsection {
+  left: 15%;
+  position: absolute;
+  /* size: 3rem; */
+  font-size: 3rem;
+  top: 35%;
+}
+.para {
+  font-size: 1.5rem;
+  color: rgb(211, 209, 209);
+  max-width: 700px;
+}
+
+.card {
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 0 0 4px black;
+}
+.left .buttons{
+  margin-top: 50px;
+}
+.left a{
+  padding: 10px 20px;
+  box-shadow: 0 0 4px white;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-right: 20px;
+  z-index: 2;
+  border-radius: 20px;
+}
+.left a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 5px rgb(107, 225, 225);
+}
+
+.profile {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin-top: 100px;
+  margin-right: 180px;
+  box-shadow: 0 0 10px rgb(69, 69, 69);
+  z-index: 1;
+}
+.left {
+  position: relative;
+  margin-top: 150px;
+  margin-left: 100px;
+}
+.name{
+  color: rgb(255, 220, 82);
+  font-size: 2.5rem;
+}
+.role{
+  color: rgb(154, 13, 254);
+  font-size: 2rem;
+}
+.left strong{
+  font-size: 1.5rem;
+  color: white;
+
+}
+.effect-font {
+  font-size: 15rem;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 0;
+  color: rgba(255, 255, 255, 0.062);
+  opacity: 0.6;
+  transform: scaleX(-1);
+  z-index: 1;
+}
+
+@keyframes App-trans {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  75% {
+    transform: translateX(-360px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 368px) {
+  .hero {
+    background: linear-gradient(180deg, #2929ff, #8989ff);
+    flex-direction: column;
+    position: relative;
+  }
+  .right {
+  }
+  .profile {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    /* border-radius: 50%;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+        z-index: 1; */
+  }
+  .para {
+    background-color: red;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    opacity: 1;
+    transform: none;
+    margin-right: 150px;
+    margin-top: 200px;
+    /* font-size: 2rem;
+        color: white;
+        z-index: 1; */
+  }
+  .logo {
+    background-color: red;
+    font-size: 1rem;
+    position: absolute;
+    top: 1%;
+    left: 35%;
+    transform: none;
+    opacity: 1;
+  }
+  .left .btn {
+    background-color: red;
+    font-size: 1rem;
+    padding: 2px 5px;
+    margin-left: 100px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  .left {
+    flex-direction: column;
+  }
+  .leftsection {
+    font-size: 1rem;
+    transform: none;
+    opacity: 1;
+  }
+}

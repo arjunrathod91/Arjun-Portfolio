@@ -1,0 +1,124 @@
+.education {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://th.bing.com/th/id/R.919b705dde6bcd77f8c81ee7f0a28207?rik=67pc0xDKlnsAvA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fVCf1lhA.jpg&ehk=1lwPNf2J3LePjPbMMBovbT53V5Zv166oteqeXgrA2ac%3d&risl=&pid=ImgRaw&r=0");
+
+  /* Other background properties */
+  background-size: cover; /* Adjusts the image size to cover the entire element */
+  background-repeat: no-repeat;
+  background-position: 50% 90%;
+}
+.education .heading {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 4px blue;
+  font-size: 3rem;
+  /* background-color: antiquewhite; */
+  margin-top: 0;
+}
+.edu-head .line {
+  height: 5px;
+  width: 30%;
+  background-color: rgb(253, 253, 253);
+  margin-top: 7px;
+}
+.edu-head {
+  width: 100%;
+  height: 150px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.story-explainer {
+  /* background-color: rgb(162, 12, 12); */
+  height: 20%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plot {
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 4px aqua;
+  /* border-radius: 10px; */
+  border-radius: 10px 10px 0 10px;
+}
+.story {
+  height: 70%;
+  width: 80%;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* background-color: aliceblue; */
+}
+.characters .hero {
+  height: 120px;
+  width: 120px;
+  background: none;
+  position: absolute;
+  top: 40%;
+  left: 4;
+}
+.start {
+  padding: 10px 15px;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  font-size: 1.2rem;
+  box-shadow: 0 0 3px rgb(192, 255, 248);
+  font-weight: 500;
+  border-radius: 10px;
+  position: absolute;
+  top: 63%;
+  left: 3%;
+  border: none;
+}
+.characters {
+  display: flex;
+  gap: 150px;
+  align-items: start;
+  border-bottom: 2px solid white;
+  /* background-color: aqua; */
+  margin-left: 200px;
+  padding: 30px;
+}
+.school {
+  height: 60px;
+  width: 60px;
+}
+.college {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.engineering {
+  height: 60px;
+  width: 60px;
+  border-radius: 10%;
+}
+.coder {
+  height: 60px;
+  width: 60px;
+}
+.success {
+  height: 60px;
+  width: 60px;
+}
+.respo-edu{
+    display: none;
+}
+
+@media only screen and (max-width: 368px) {
+  .education {
+    background-color: aqua;
+  }
+}

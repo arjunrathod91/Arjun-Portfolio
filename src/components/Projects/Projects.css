@@ -1,0 +1,140 @@
+.projects {
+  height: 300vh;
+  width: 100vw;
+  background-color: rgb(5, 30, 68);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  /*I can increase the lenght with help of leght of array*/
+}
+.projects .heading {
+  color: aqua;
+  font-size: 4rem;
+  margin-top: 30px;
+}
+.line {
+  height: 10px;
+  width: 80%;
+  background-color: aqua;
+  margin-top: 15px;
+}
+.proj-head {
+  width: 100%;
+  height: 150px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.proj-cont {
+  height: 50%;
+  width: 80%;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 0 4px rgb(59, 239, 255);
+}
+.proj-img {
+  height: 100%;
+  width: 49%;
+}
+.proj-img img {
+  height: 70%;
+  width: 80%;
+  margin-top: 35px;
+  margin-left: 40px;
+  border: 1px solid white;
+}
+.all-flex-col {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.proj-info {
+  height: 100%;
+  width: 50%;
+}
+.proj-info div {
+  display: flex;
+}
+.proj-info .btn {
+  padding: 10px 20px;
+  background-color: rgb(255, 206, 45);
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 100px;
+  margin-right: 20px;
+  color: white;
+}
+.proj-info .btn:hover {
+  color: white;
+  background-color: rgb(229, 188, 43);
+}
+.proj-info strong {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  color: white;
+}
+.proj-info p {
+  font-size: 1.2rem;
+  color: white;
+  width: 490px;
+}
+@media only screen and (max-width: 360px) {
+    .projects .heading {
+        color: aqua;
+        font-size: 2.5rem;
+        margin-top: 18px;
+      }
+  .proj-cont {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    box-shadow: 0 0 4px rgb(255, 255, 255);
+    margin-top: 20px;
+  }
+  .projects .line{
+    height: 1px;
+    margin-top: 4px;
+    width: 40%;
+    margin-right: 20px;
+  }
+  .proj-img img {
+    height: 170px;
+    width: 200px;
+  }
+  .proj-img {
+    height: 180px;
+    width: 200px;
+    margin-top: 30px;
+  }
+  .proj-info {
+    height: 300px;
+    width: 270px;
+    margin-left: 20px;
+    overflow: hidden;
+  }
+  .proj-info strong {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: white;
+  }
+  .proj-info p {
+    font-size: 0.8rem;
+    color: white;
+  }
+  .proj-info .btn {
+    padding: 3px 5px;
+    background-color: orange;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 80px;
+  }
+}
