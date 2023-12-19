@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import Typed from "typed.js";
 import "./Home.css";
 import Navbar from "../Navbar/Navbar";
 import Card from "../Card/Card";
@@ -15,6 +16,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function Home() {
+    const el = useRef(null);
   const newVariant = {
     initial: {
       x: -500,
@@ -30,31 +32,44 @@ function Home() {
     },
   };
 
+useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ['<i>Web Devloper</i>','<i>Web Designer</i>'],
+      typeSpeed: 50,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
+
   return (
     <div>
       <Navbar />
       <div className="hero space-around flex">
-        <motion.div
+        <div
           className="left"
-          variants={newVariant}
-          initial="initial"
-          // animate="animate"
-          whileInView="animate"
+          // variants={newVariant}
+          // initial="initial"
+          // // animate="animate"
+          // whileInView="animate"
         >
-          <motion.strong>
-            Hii It's Me <span className="name">Arjun Rathod</span>
-          </motion.strong>
+          <strong>
+            {/* <span className="name">Arjun Rathod</span> */}
+            Hii It's Me  <span className="name">Arjun Rathod</span>
+          </strong>
           <br/>
-            <motion.span className="role">Web Devloper</motion.span>
-            <motion.p className="para">
+          <span ref={el} className="role"></span>
+            <p className="para">
               Strong interest in web development and programming.Looking for a
               Web Developer position.
-            </motion.p>
-            <motion.div className="buttons">
-              <a href="https://arjunrathod91.github.io/Portfolio_Website/Accets/Arjun%20Rathod%20Intern%20Web%20Devloper.pdf">Github</a>
-              <a href="https://github.com/arjunrathod91">Resume</a>
-            </motion.div>
-        </motion.div>
+            </p>
+            <div className="buttons">
+              <a href="https://github.com/arjunrathod91">Github</a>
+              <a href="https://arjunrathod91.github.io/Portfolio_Website/Accets/Arjun%20Rathod%20Intern%20Web%20Devloper.pdf">Resume</a>
+            </div>
+        </div>
         <div className="right">
           <img src={"/Img/new.jpeg"} alt="" className="profile" />
         </div>
@@ -63,6 +78,7 @@ function Home() {
       <Skills />
       <Projects />
       <Contact />
+      
     </div>
   );
 }
