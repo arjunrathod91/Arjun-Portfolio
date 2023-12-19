@@ -27,35 +27,38 @@ function Skills() {
         },
         {
           title: "Express",
-          img: "",
+          img: "https://th.bing.com/th/id/OIP.1fZjQpkRMKTBGN_7H5YnFwHaGL?rs=1&pid=ImgDetMain",
         },
         {
           title: "MongoDb",
-          img: "",
+          img: "https://www.liblogo.com/img-logo/mo429m311-mongodb-logo-mongodb-logo-.png",
         },
         {
           title: "Python",
           img: "https://cdn-icons-png.flaticon.com/128/5968/5968350.png",
-        },
+        }, 
       ];
       const others = [
         {
-          title: "Python",
-          img: "https://cdn-icons-png.flaticon.com/128/5968/5968350.png",
+          title: "Visual Studio Code",
+          img: "https://th.bing.com/th/id/OIP.PEsu4Jw9kb-jeGjGCYlppwHaHa?w=163&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
         },
         {
-          title: "Python",
-          img: "https://cdn-icons-png.flaticon.com/128/5968/5968350.png",
+          title: "Netlify",
+          img: "https://th.bing.com/th/id/OIP.OzH3GxFfwZzmf5YAofUkSgAAAA?w=207&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
         },
         {
-          title: "Python",
-          img: "https://cdn-icons-png.flaticon.com/128/5968/5968350.png",
+          title: "github",
+          img: "https://cdn-icons-png.flaticon.com/128/733/733609.png",
         },
         {
-          title: "Python",
-          img: "https://cdn-icons-png.flaticon.com/128/5968/5968350.png",
+          title: "Varcel",
+          img: "https://th.bing.com/th/id/OIP.qMKw3u8T1ULw65j9fPrPZAAAAA?rs=1&pid=ImgDetMain",
         },
-
+        {
+          title: "Socket.Io",
+          img: "https://branditechture.agency/brand-logos/wp-content/uploads/2023/05/Socket-Io.png",
+        },
       ]
   return (
     <div className="skills" id="skills">
@@ -79,7 +82,7 @@ function Skills() {
           <div className='others'>
           <strong className='title'>Others</strong>
             {
-              webDevlopment.map((item)=>(
+             others.map((item)=>(
                 <div item={item} className='box1'>
                   <img src={item.img} alt="" />
                   <p>{item.title}</p>

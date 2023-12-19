@@ -36,18 +36,22 @@
 }
 .left .buttons{
   margin-top: 50px;
+  display: flex;
 }
-.left a{
+.buttons a{
   padding: 10px 20px;
   box-shadow: 0 0 4px white;
   border: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
   margin-right: 20px;
-  z-index: 2;
   border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
+
 .left a:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -74,7 +78,7 @@
 }
 .role{
   color: rgb(154, 13, 254);
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .left strong{
   font-size: 1.5rem;
@@ -113,7 +117,7 @@
 
 @media only screen and (max-width: 368px) {
   .hero {
-    background: linear-gradient(180deg, #2929ff, #8989ff);
+    background: linear-gradient(180deg, #0c0c1d, #111132);
     flex-direction: column;
     position: relative;
   }
@@ -123,49 +127,44 @@
     height: 150px;
     width: 150px;
     position: absolute;
-    top: 5%;
-    right: 0;
+    top: 0;
+    left: 25%;
     /* border-radius: 50%;
         box-shadow: 0 0 10px rgb(0, 0, 0);
         z-index: 1; */
   }
+  .left strong{
+    font-size: 0.8rem;
+
+  }
+  .name{
+    font-size: 1.2rem;
+
+  }
+  .role{
+    font-size: 1.5rem;
+    color: rgb(32, 209, 156);
+
+  }
+  .buttons a{
+    font-size: 0.8rem;
+    padding: 4px 6px;
+  }
+  .hero .left .buttons{
+    margin-top:20px;
+  }
   .para {
-    background-color: red;
-    position: absolute;
-    top: 20%;
-    right: 10%;
-    opacity: 1;
-    transform: none;
-    margin-right: 150px;
-    margin-top: 200px;
-    /* font-size: 2rem;
-        color: white;
-        z-index: 1; */
+    font-size: 0.8rem;
+    color: rgb(184, 179, 179);
   }
-  .logo {
-    background-color: red;
-    font-size: 1rem;
-    position: absolute;
-    top: 1%;
-    left: 35%;
-    transform: none;
-    opacity: 1;
-  }
-  .left .btn {
-    background-color: red;
-    font-size: 1rem;
-    padding: 2px 5px;
-    margin-left: 100px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-  .left {
+  .hero .left{
     flex-direction: column;
-  }
-  .leftsection {
-    font-size: 1rem;
-    transform: none;
-    opacity: 1;
+    position: absolute;
+    top: 24%;
+    right: 1%;
+    height: 300px;
+    width: 300px;
+    margin-left: 50px;
+
   }
 }

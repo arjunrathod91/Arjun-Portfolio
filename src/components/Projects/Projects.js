@@ -1,6 +1,7 @@
 import React from "react";
 import "./Projects.css";
 import { motion } from "framer-motion";
+import Skills from "../Skills/Skills";
 
 function Projects() {
   const projects = [
@@ -10,6 +11,7 @@ function Projects() {
       img: "/Projects/Ichatapp.png",
       github: "https://github.com/arjunrathod91/chatapp",
       demo: "https://chatapparjun.onrender.com/",
+      skill:['https://cdn-icons-png.flaticon.com/128/1051/1051277.png','https://cdn-icons-png.flaticon.com/128/732/732190.png','https://cdn-icons-png.flaticon.com/128/5968/5968292.png','https://cdn-icons-png.flaticon.com/128/919/919825.png','https://th.bing.com/th/id/OIP.1fZjQpkRMKTBGN_7H5YnFwHaGL?rs=1&pid=ImgDetMain','https://branditechture.agency/brand-logos/wp-content/uploads/2023/05/Socket-Io.png']
     },
     {
       title: "IshopStore",
@@ -17,6 +19,7 @@ function Projects() {
       img: "/Projects/Ishopstore.png",
       github: "https://github.com/arjunrathod91/Ishopstore",
       demo: "https://ishopstoreapp.netlify.app/",
+      skill:['https://cdn-icons-png.flaticon.com/128/919/919851.png','https://cdn-icons-png.flaticon.com/128/919/919825.png','https://www.liblogo.com/img-logo/mo429m311-mongodb-logo-mongodb-logo-.png','https://cdn-icons-png.flaticon.com/128/5968/5968292.png']
     },
     {
       title: "NoteApp",
@@ -24,6 +27,7 @@ function Projects() {
       img: "/Projects/noteapp.png",
       github: "https://github.com/arjunrathod91/Notes_App",
       demo: "https://arjunnoteapp.netlify.app/",
+      skill:['https://cdn-icons-png.flaticon.com/128/1051/1051277.png','https://cdn-icons-png.flaticon.com/128/732/732190.png','https://cdn-icons-png.flaticon.com/128/5968/5968292.png']
     },
     {
       title: "Dashboard UI",
@@ -31,6 +35,7 @@ function Projects() {
       img: "/Projects/dashboard.png",
       github: "",
       demo: "https://arjundashboard.netlify.app/",
+      skill:['https://cdn-icons-png.flaticon.com/128/919/919851.png','https://cdn-icons-png.flaticon.com/128/919/919825.png','https://www.liblogo.com/img-logo/mo429m311-mongodb-logo-mongodb-logo-.png','https://cdn-icons-png.flaticon.com/128/5968/5968292.png']
     },
     // {
     //   title: "News App",
@@ -81,10 +86,15 @@ function Projects() {
           </div>
           <div className="proj-info all-flex-col">
             <strong>{item.title}</strong>
+            <div className="icons">{item.skill.map((icon)=>(
+              <img src={icon} alt="" />
+            )
+              
+            )}</div>
             <p>{item.desc}</p>
             <div>
-              <button className="btn">Github</button>
-              <button className="btn">Demo</button>
+              <button className="btn"><a href={item.github}>Github</a></button>
+              <button className="btn"><a href={item.demo}>Demo</a></button>
             </div>
           </div>
         </motion.div>
