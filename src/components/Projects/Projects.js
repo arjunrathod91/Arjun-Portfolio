@@ -11,7 +11,14 @@ function Projects() {
       img: "/Projects/Ichatapp.png",
       github: "https://github.com/arjunrathod91/chatapp",
       demo: "https://chatapparjun.onrender.com/",
-      skill:['https://cdn-icons-png.flaticon.com/128/1051/1051277.png','https://cdn-icons-png.flaticon.com/128/732/732190.png','https://cdn-icons-png.flaticon.com/128/5968/5968292.png','https://cdn-icons-png.flaticon.com/128/919/919825.png','https://th.bing.com/th/id/OIP.1fZjQpkRMKTBGN_7H5YnFwHaGL?rs=1&pid=ImgDetMain','https://branditechture.agency/brand-logos/wp-content/uploads/2023/05/Socket-Io.png']
+      skill: [
+        "https://cdn-icons-png.flaticon.com/128/1051/1051277.png",
+        "https://cdn-icons-png.flaticon.com/128/732/732190.png",
+        "https://cdn-icons-png.flaticon.com/128/5968/5968292.png",
+        "https://cdn-icons-png.flaticon.com/128/919/919825.png",
+        "https://th.bing.com/th/id/OIP.1fZjQpkRMKTBGN_7H5YnFwHaGL?rs=1&pid=ImgDetMain",
+        "https://branditechture.agency/brand-logos/wp-content/uploads/2023/05/Socket-Io.png",
+      ],
     },
     {
       title: "IshopStore",
@@ -19,7 +26,12 @@ function Projects() {
       img: "/Projects/Ishopstore.png",
       github: "https://github.com/arjunrathod91/Ishopstore",
       demo: "https://ishopstoreapp.netlify.app/",
-      skill:['https://cdn-icons-png.flaticon.com/128/919/919851.png','https://cdn-icons-png.flaticon.com/128/919/919825.png','https://www.liblogo.com/img-logo/mo429m311-mongodb-logo-mongodb-logo-.png','https://cdn-icons-png.flaticon.com/128/5968/5968292.png']
+      skill: [
+        "https://cdn-icons-png.flaticon.com/128/919/919851.png",
+        "https://cdn-icons-png.flaticon.com/128/919/919825.png",
+        "https://www.liblogo.com/img-logo/mo429m311-mongodb-logo-mongodb-logo-.png",
+        "https://cdn-icons-png.flaticon.com/128/5968/5968292.png",
+      ],
     },
     {
       title: "NoteApp",
@@ -27,7 +39,11 @@ function Projects() {
       img: "/Projects/noteapp.png",
       github: "https://github.com/arjunrathod91/Notes_App",
       demo: "https://arjunnoteapp.netlify.app/",
-      skill:['https://cdn-icons-png.flaticon.com/128/1051/1051277.png','https://cdn-icons-png.flaticon.com/128/732/732190.png','https://cdn-icons-png.flaticon.com/128/5968/5968292.png']
+      skill: [
+        "https://cdn-icons-png.flaticon.com/128/1051/1051277.png",
+        "https://cdn-icons-png.flaticon.com/128/732/732190.png",
+        "https://cdn-icons-png.flaticon.com/128/5968/5968292.png",
+      ],
     },
     {
       title: "Dashboard UI",
@@ -35,22 +51,39 @@ function Projects() {
       img: "/Projects/dashboard.png",
       github: "",
       demo: "https://arjundashboard.netlify.app/",
-      skill:['https://cdn-icons-png.flaticon.com/128/919/919851.png','https://cdn-icons-png.flaticon.com/128/919/919825.png','https://www.liblogo.com/img-logo/mo429m311-mongodb-logo-mongodb-logo-.png','https://cdn-icons-png.flaticon.com/128/5968/5968292.png']
+      skill: [
+        "https://cdn-icons-png.flaticon.com/128/919/919851.png",
+        "https://cdn-icons-png.flaticon.com/128/919/919825.png",
+        "https://www.liblogo.com/img-logo/mo429m311-mongodb-logo-mongodb-logo-.png",
+        "https://cdn-icons-png.flaticon.com/128/5968/5968292.png",
+      ],
     },
-    // {
-    //   title: "News App",
-    //   desc: "News App is website i build with Html,Css and javascript. In this i used News Api for Api data fetching. Also tried to integrate a search by quory functionality.",
-    //   img: "/Projects/dashboard.png",
-    //   github: "https://github.com/arjunrathod91/TodayIndiaNews",
-    //   demo: "",
-    // },
-    // {
-    //   title: "Remote Connect",
-    //   desc: "Remote Connect is website I build with in a hackthon compitition with my team senior.",
-    //   img: "/Projects/remoteconnect.png",
-    //   github: "https://github.com/arjunrathod91/Remote_Connect",
-    //   demo: "https://arjunrathod91.github.io/Remote_Connect/",
-    // },
+    {
+      title: "News App",
+      desc: "News App is website i build with Html,Css and javascript. In this i used News Api for Api data fetching. Also tried to integrate a search by quory functionality.",
+      img: "/Projects/dashboard.png",
+      github: "https://github.com/arjunrathod91/TodayIndiaNews",
+      demo: "",
+      skill: [
+        "https://cdn-icons-png.flaticon.com/128/919/919851.png",
+        "https://cdn-icons-png.flaticon.com/128/919/919825.png",
+        "https://www.liblogo.com/img-logo/mo429m311-mongodb-logo-mongodb-logo-.png",
+        "https://cdn-icons-png.flaticon.com/128/5968/5968292.png",
+      ],
+    },
+    {
+      title: "Remote Connect",
+      desc: "Remote Connect is website I build with in a hackthon compitition with my team senior.",
+      img: "/Projects/remoteconnect.png",
+      github: "https://github.com/arjunrathod91/Remote_Connect",
+      demo: "https://arjunrathod91.github.io/Remote_Connect/",
+      skill: [
+        "https://cdn-icons-png.flaticon.com/128/919/919851.png",
+        "https://cdn-icons-png.flaticon.com/128/919/919825.png",
+        "https://www.liblogo.com/img-logo/mo429m311-mongodb-logo-mongodb-logo-.png",
+        "https://cdn-icons-png.flaticon.com/128/5968/5968292.png",
+      ],
+    },
   ];
 
   const newVarients = {
@@ -81,20 +114,24 @@ function Projects() {
           initial="initial"
           whileInView="animate"
         >
-          <div className="proj-img all-flex-col">
+          <div className="proj-img">
             <img src={item.img} alt="" />
           </div>
-          <div className="proj-info all-flex-col">
+          <div className="proj-info">
             <strong>{item.title}</strong>
-            <div className="icons">{item.skill.map((icon)=>(
-              <img src={icon} alt="" />
-            )
-              
-            )}</div>
+            <div className="icons">
+              {item.skill.map((icon) => (
+                <img src={icon} alt="" />
+              ))}
+            </div>
             <p>{item.desc}</p>
-            <div>
-              <button className="btn"><a href={item.github}>Github</a></button>
-              <button className="btn"><a href={item.demo}>Demo</a></button>
+            <div className="button">
+              <button className="btn">
+                <a href={item.github}>Github</a>
+              </button>
+              <button className="btn">
+                <a href={item.demo}>Demo</a>
+              </button>
             </div>
           </div>
         </motion.div>

@@ -1,5 +1,5 @@
 .projects {
-  height: 300vh;
+  height: 500vh;
   width: 100vw;
   background-color: rgb(5, 30, 68);
   display: flex;
@@ -10,11 +10,11 @@
 }
 .projects .heading {
   color: aqua;
-  font-size: 4rem;
-  margin-top: 30px;
+  font-size: 3.5rem;
+  margin-top: 20px;
 }
 .line {
-  height: 10px;
+  height: 7px;
   width: 80%;
   background-color: aqua;
   margin-top: 15px;
@@ -22,7 +22,6 @@
 .proj-head {
   width: 100%;
   height: 150px;
-  background-color: transparent;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -33,43 +32,41 @@
   margin-bottom: 20px;
   margin-top: 60px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  gap: 10px;
   box-shadow: 0 0 4px rgb(59, 239, 255);
 }
 .proj-img {
-  height: 100%;
+  height: 80%;
   width: 49%;
+  margin-top: 32px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .proj-img img {
-  height: 70%;
+  height: 80%;
   width: 80%;
-  margin-top: 35px;
-  margin-left: 40px;
   border: 1px solid white;
-}
-.all-flex-col {
-  display: flex;
-  align-items: start;
-  flex-direction: column;
 }
 .proj-info {
   height: 100%;
-  width: 50%;
-}
-.proj-info div {
+  width: 51%;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .proj-info .btn {
-  padding: 10px 20px;
+  padding: 0.4rem 0.8rem;
   background-color: rgb(255, 206, 45);
   font-size: 15px;
   font-weight: bold;
   border-radius: 5px;
   width: 100px;
-  margin-right: 20px;
   color: white;
+}
+.button{
+  display: flex;
+  gap: 20px;
 }
 .proj-info .btn:hover {
   color: white;
@@ -77,24 +74,24 @@
 }
 .proj-info strong {
   font-size: 2.5rem;
-  margin-top: 20px;
   color: white;
+  margin-top: 50px;
 }
 .icons{
   display: flex;
   gap: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .icons img{
   height: 20px;
   width: 20px;
 }
 .proj-info p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: white;
-  width: 490px;
+  padding: 5px;
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 600px) {
     .projects .heading {
         color: aqua;
         font-size: 2.5rem;
@@ -102,11 +99,15 @@
       }
   .proj-cont {
     flex-direction: column;
-    flex-wrap: nowrap;
-    border: 1px solid rgb(255, 255, 255);
-    padding: 5px;
-    box-shadow: 0 0 4px rgb(255, 255, 255);
-    margin-top: 20px;
+    padding: 10px;
+  }
+  .proj-img{
+    height: 35%;
+    width: 100%;
+  }
+  .proj-info{
+    height: 85%;
+    width: 100%;
   }
   .projects .line{
     height: 1px;
@@ -115,20 +116,11 @@
     margin-right: 20px;
   }
   .proj-img img {
-    height: 170px;
+    height: 100%;
     width: 100%;
   }
-  .proj-img {
-    height: 180px;
-    width:180px;
-    margin-top: 10px;
-    margin-right: 100px;
-  }
   .proj-info {
-    height: 300px;
-    width: 270px;
-    margin-left: 20px;
-    overflow: hidden;
+
   }
   .proj-info strong {
     font-size: 1.5rem;

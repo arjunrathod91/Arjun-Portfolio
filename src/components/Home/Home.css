@@ -1,54 +1,28 @@
 .hero {
-  height: calc(100vh - 130px);
-  width: 100vw;
+  height: calc(100vh - 80px);
+  width: 100%;
   background: linear-gradient(180deg, #0c0c1d, #111132);
-  position: relative;
-  justify-content: center;
   display: flex;
-}
-.wrap {
-  flex-wrap: wrap;
-}
-.space-around {
-  justify-content: space-around;
-}
-.flex {
-  display: flex;
+  z-index: 1;
 }
 
-.leftsection {
-  left: 15%;
-  position: absolute;
-  /* size: 3rem; */
-  font-size: 3rem;
-  top: 35%;
-}
 .para {
   font-size: 1.5rem;
   color: rgb(211, 209, 209);
   max-width: 700px;
 }
-
-.card {
-  padding: 5px;
-  margin: 5px;
-  box-shadow: 0 0 4px black;
-}
 .left .buttons{
-  margin-top: 50px;
+  gap: 30px;
   display: flex;
 }
 .buttons a{
-  padding: 10px 20px;
+  padding: 0.9rem 1.5rem;
   box-shadow: 0 0 4px white;
   border: none;
   color: white;
   font-size: 1.3rem;
   font-weight: 500;
-  margin-right: 20px;
   border-radius: 20px;
-  justify-content: center;
-  align-items: center;
   display: flex;
 }
 
@@ -59,19 +33,12 @@
 }
 
 .profile {
-  height: 300px;
-  width: 300px;
+  height: 50%;
+  width: 50%;
   border-radius: 50%;
-  margin-top: 100px;
-  margin-right: 180px;
   box-shadow: 0 0 10px rgb(69, 69, 69);
-  z-index: 1;
 }
-.left {
-  position: relative;
-  margin-top: 150px;
-  margin-left: 100px;
-}
+
 .name{
   color: rgb(255, 220, 82);
   font-size: 2.5rem;
@@ -79,21 +46,29 @@
 .role{
   color: rgb(154, 13, 254);
   font-size: 2.5rem;
+  text-shadow: 0 0 1px white
 }
 .left strong{
   font-size: 1.5rem;
   color: white;
 
 }
-.effect-font {
-  font-size: 15rem;
-  white-space: nowrap;
-  position: absolute;
-  bottom: 0;
-  color: rgba(255, 255, 255, 0.062);
-  opacity: 0.6;
-  transform: scaleX(-1);
-  z-index: 1;
+
+.left{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-top: 10%;
+  padding-left: 5%;
+}
+.right{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes App-trans {
@@ -115,56 +90,59 @@
   }
 }
 
-@media only screen and (max-width: 368px) {
-  .hero {
-    background: linear-gradient(180deg, #0c0c1d, #111132);
+/* @media only screen and (max-width: 799px) {
+  .hero{
+    height: 130vh;
+  }
+
+} */
+
+@media only screen and (max-width:799px) {
+  .hero{
     flex-direction: column;
-    position: relative;
+    flex-direction: column-reverse;
+    height: 100vh;
+    width: 100vw;
   }
-  .right {
-  }
-  .profile {
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    top: 0;
-    left: 25%;
-    /* border-radius: 50%;
-        box-shadow: 0 0 10px rgb(0, 0, 0);
-        z-index: 1; */
-  }
-  .left strong{
-    font-size: 0.8rem;
+  .left{
+    height: 50%;
+    width: 100%;
+    padding-top: 10px;
 
   }
-  .name{
-    font-size: 1.2rem;
-
-  }
-  .role{
-    font-size: 1.5rem;
-    color: rgb(32, 209, 156);
-
+  .buttons{
+    gap: 10px;
   }
   .buttons a{
-    font-size: 0.8rem;
-    padding: 4px 6px;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+    
   }
-  .hero .left .buttons{
-    margin-top:20px;
+  .right{
+    height: 50%;
+    width: 50%;
+    align-items: center;
+  }
+  .left strong{
+    font-size: 0.9rem;
+    color: white;
+  
+  }
+  .profile{
+    height: 50%;
+    width: 50%;
+    margin-top: 50px;
+  }
+  .name{
+    font-size: 1.4rem;
+  }
+  .role{
+    font-size: 1.4rem;
   }
   .para {
-    font-size: 0.8rem;
-    color: rgb(184, 179, 179);
+    font-size: 0.9rem;
+    width: 400px;
+    padding-right: 20px;
   }
-  .hero .left{
-    flex-direction: column;
-    position: absolute;
-    top: 24%;
-    right: 1%;
-    height: 300px;
-    width: 300px;
-    margin-left: 50px;
-
-  }
+  
 }
