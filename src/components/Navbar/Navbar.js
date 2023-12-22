@@ -24,7 +24,7 @@ function Navbar() {
       <div className="links">
         <ul className="flex">
           <li>
-            <a href="/">Home</a>
+            <a href="/" className={''}>Home</a>
           </li>
           <li>
             <a href="#educations">Education</a>

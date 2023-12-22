@@ -1,7 +1,7 @@
 .hero {
   height: calc(100vh - 80px);
   width: 100%;
-  background: linear-gradient(180deg, #0c0c1d, #111132);
+  background: linear-gradient(180deg, #191469, #091a2c);
   display: flex;
   z-index: 1;
 }
