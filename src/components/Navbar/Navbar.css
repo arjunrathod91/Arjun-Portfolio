@@ -13,7 +13,7 @@
     margin-right: 50px;
 }
 .heading p{
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 500;
 }
 
@@ -26,15 +26,14 @@ ul{
     font-size: 1.2rem;
     color: white;
 }
-.active{
-    color: aqua;
-}
-.active{
-    color: rgb(0, 183, 255);
+.links a:hover{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    transform: scale(1.2);
+    text-shadow:0 0 4px rgb(246, 255, 77);
 }
 a{
     text-decoration: none;
-    color: black;
 }
 .menu-toggle{
     display: none;

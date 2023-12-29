@@ -70,8 +70,8 @@ function Contact() {
         </div>
         <div className="cont-inp">
             <form ref={formRef} onSubmit={sendEmail}>
-              <input type="text" placeholder="Name." name="name" />
-              <input type="text" placeholder="Email" name="email" />
+              <input type="text" placeholder="Name." name="name" required/>
+              <input type="email" placeholder="Email" name="email" required/>
               <textarea
                 rows="8"
                 placeholder="Message"

@@ -139,6 +139,9 @@ textarea{
         border:1px solid gray;
 
     }
+    a{
+        color: inherit;
+    }
     .cont-inp button{
         padding:2px 3px;
         background-color: orange;

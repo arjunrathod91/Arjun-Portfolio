@@ -5,6 +5,9 @@ import Sidebar from "../Sidebar/Sidebar";
 function Navbar() {
   const [open, setOpen] = useState(false);
 
+  const [active,setActive] = useState(false)
+  const [done,setDone] = useState('active')
+
   const clicked=()=>{
     setOpen(!open)
     if(open){
@@ -24,7 +27,7 @@ function Navbar() {
       <div className="links">
         <ul className="flex">
           <li>
-            <a href="/" className={''}>Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
             <a href="#educations">Education</a>

@@ -24,32 +24,15 @@ function Educations() {
     },
   ];
 
-  const newVarients = {
-    initial: {
-      x: 300,
-      opacity: 0,
-    },
-    animate: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.9,
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
   return (
     <div className="educations" id="educations">
       <div className="edu-head">
         <strong className="heading">Education</strong>
         <div className="line"></div>
       </div>
-      <motion.div
+      <div
         className="edu-info"
-        variants={newVarients}
-        initial="initial"
-        whileInView="animate"
+
       >
         {education.map((item) => (
           <div className="edu-box">
@@ -67,11 +50,11 @@ function Educations() {
             )}
           </div>
         ))}
-        <div className="bar"></div>
+        {/* <div className="bar"></div>
         <div className="dot1"></div>
         <div className="dot2"></div>
-        <div className="dot3"></div>
-      </motion.div>
+        <div className="dot3"></div> */}
+      </div>
     </div>
   );
 }

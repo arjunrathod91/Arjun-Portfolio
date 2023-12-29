@@ -47,7 +47,7 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <div id="home">
       <Navbar />
       <div className="hero">
         <div
