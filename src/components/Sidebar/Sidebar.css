@@ -1,0 +1,32 @@
+.sidebar{
+    height: 100%;
+    width: 70%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.mylinks{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.mylinks a{
+    color: gray;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.mylinks a:hover{
+    color: rgb(0, 0, 0);
+    transform: scale(1.2);
+}
+.cancel{
+    position: absolute;
+    top: 4%;
+    left: 4%;
+}
