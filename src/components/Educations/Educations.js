@@ -8,9 +8,8 @@ function Educations() {
       title: "BE in Mechanical Engineering",
       desc: [
         "From : NBN School of Engineering",
-        "Droped Out after 1 and half year",
       ],
-      year: "2023",
+      year: "2026",
     },
     {
       title: "Higher Secondary Board(HSC)",
