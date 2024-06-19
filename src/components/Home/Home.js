@@ -66,7 +66,7 @@ function Home() {
           </div>
         </div>
         <div className="right">
-          <img src="Img/arjun rathod jpg.jpg" alt="" className="hero-profile" />
+          <img src="Img/arjun rathod jpg.jpg" loading="lazy" alt="" className="hero-profile" />
         </div>
       </div>
       <Skills />
