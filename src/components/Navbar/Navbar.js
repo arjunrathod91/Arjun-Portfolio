@@ -6,10 +6,6 @@ import { Close } from "@mui/icons-material";
 function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const clicked = () => {
-    setOpen(!open);
-  };
-
   return (
     <div className="navbar flex">
       <div className="heading">
