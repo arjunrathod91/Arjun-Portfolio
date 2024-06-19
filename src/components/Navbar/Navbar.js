@@ -6,16 +6,8 @@ import { Close } from "@mui/icons-material";
 function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const [active, setActive] = useState(false);
-  const [done, setDone] = useState("active");
-
   const clicked = () => {
     setOpen(!open);
-    if (open) {
-      console.log("clicked");
-    } else {
-      console.log("not clicked");
-    }
   };
 
   return (
