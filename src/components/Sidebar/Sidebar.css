@@ -1,14 +1,14 @@
 .sidebar{
-    height: 100%;
-    width: 70%;
+    padding: 20px;
+    width: 100%;
     background-color: white;
     justify-content: center;
     align-items: center;
     display: flex;
     position: fixed;
-    top: 0;
+    top: 60px;
     left: 0;
-    z-index: 2;
+    z-index: 999;
 }
 .mylinks{
     display: flex;

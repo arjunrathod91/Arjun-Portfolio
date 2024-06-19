@@ -1,19 +1,24 @@
 .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 60px;
-    width: 100%;
-    /* width: 100vw; */
-    background-color: rgb(7, 7, 52);
+    width: 100vw;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 999;
 
 }
-.heading,.links{
+.heading{
     margin-left: 30px;
+}
+.links{
     margin-right: 50px;
 }
 .heading p{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-weight: 500;
 }
 
@@ -24,13 +29,12 @@ ul{
 }
 .links a{
     font-size: 1.2rem;
-    color: white;
+    color: rgb(70, 70, 70);
 }
 .links a:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(33, 33, 33);
     font-weight: 500;
     transform: scale(1.2);
-    text-shadow:0 0 4px rgb(246, 255, 77);
 }
 a{
     text-decoration: none;
@@ -42,13 +46,13 @@ a{
 .menubar {
     width: 25px;
     height: 3px;
-    background-color: #ffffff;
+    background-color: #000000;
     margin: 4px 0;
   }
   
 @media only screen and (max-width: 623px) {
     .links{
-        visibility: hidden;
+        display: none;
     }
     .profile{
         height: 150px;
@@ -60,16 +64,16 @@ a{
         z-index: 1; */
     }
     .navbar{
-        position: relative;
+        justify-content: end;
 
     }
     .navbar .heading p{
-        position: absolute;
+        /* position: absolute;
         top: 0;
-        right: 0;
+        right: 0; */
         font-size: 1.2rem;
         font-weight: 500;
-        margin-right: 20px;
+        margin-right: 50px;
     }
     .menu-toggle{
         display: block;

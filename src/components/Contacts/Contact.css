@@ -48,8 +48,6 @@
     border: 1px solid rgb(0, 0, 0);
     border-radius: 20px;
     box-shadow: 0 0 4px black;
-    
-
 }
 .flex{
     display: flex;
@@ -75,11 +73,13 @@ input{
     width: 80%;
     border-radius: 5px;
     padding: 0 10px;
+    border: 1px solid gray;
 }
 textarea{
     border-radius: 5px;
     padding: 5px 10px;
     width: 80%;
+    border: 1px solid gray;
 }
 .cont-inp button{
     border: none;

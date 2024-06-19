@@ -1,93 +1,78 @@
 .hero {
-  height: calc(100vh - 80px);
+  padding: 20px;
+  height: 80vh;
   width: 100%;
-  background: linear-gradient(180deg, #191469, #091a2c);
+  background:rgb(255, 255, 255);
   display: flex;
   z-index: 1;
+  position: relative;
 }
 
 .para {
   font-size: 1.5rem;
-  color: rgb(211, 209, 209);
+  color: rgb(0, 0, 0);
   max-width: 700px;
 }
 .left .buttons{
   gap: 30px;
   display: flex;
+  margin-top: 30px;
 }
 .buttons a{
-  padding: 0.9rem 1.5rem;
-  box-shadow: 0 0 4px white;
+  padding:12px 15px;
+  box-shadow: 0 0 4px rgb(0, 0, 0);
+  background-color: black;
   border: none;
-  color: white;
-  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
   font-weight: 500;
-  border-radius: 20px;
+  gap: 10px;
+  border-radius: 5px;
   display: flex;
 }
 
-.left a:hover {
-  background-color: rgb(255, 255, 255);
+/* .left a:hover {
   color: rgb(0, 0, 0);
-  box-shadow: 0 0 5px rgb(107, 225, 225);
-}
+  background-color: white;
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+} */
 
-.profile {
-  height: 50%;
-  width: 50%;
+.hero-profile {
+  height: 350px;
+  width: 350px;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgb(69, 69, 69);
+  /* box-shadow: 0 0 10px rgb(69, 69, 69); */
 }
 
 .name{
-  color: rgb(255, 220, 82);
-  font-size: 2.5rem;
+  color: rgb(0, 0, 0);
+  font-size: 6rem;
 }
 .role{
-  color: rgb(154, 13, 254);
+  color: rgb(0, 0, 0);
   font-size: 2.5rem;
-  text-shadow: 0 0 1px white
+  text-shadow: 0 0 1px rgb(0, 0, 0)
 }
 .left strong{
   font-size: 1.5rem;
-  color: white;
+  color: rgb(0, 0, 0);
 
 }
 
 .left{
-  height: 100%;
-  width: 50%;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  padding-top: 10%;
-  padding-left: 5%;
+  justify-content: center;
+  align-items: start;
+  padding-left: 40px;
 }
 .right{
   height: 100%;
-  width: 50%;
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@keyframes App-trans {
-  0% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  50% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  75% {
-    transform: translateX(-360px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
 
 /* @media only screen and (max-width: 799px) {
@@ -101,13 +86,11 @@
   .hero{
     flex-direction: column;
     flex-direction: column-reverse;
-    height: 100vh;
     width: 100vw;
   }
   .left{
-    height: 50%;
     width: 100%;
-    padding-top: 10px;
+    padding-left: 0;
 
   }
   .buttons{
@@ -119,19 +102,18 @@
     
   }
   .right{
-    height: 50%;
-    width: 50%;
+    width: 100%;
     align-items: center;
+    justify-content: center;
   }
   .left strong{
     font-size: 0.9rem;
-    color: white;
   
   }
-  .profile{
-    height: 50%;
-    width: 50%;
-    margin-top: 50px;
+  .hero-profile{
+    height: 230px;
+    width: 230px;
+    margin-top: 100px;
   }
   .name{
     font-size: 1.4rem;
@@ -141,7 +123,6 @@
   }
   .para {
     font-size: 0.9rem;
-    width: 400px;
     padding-right: 20px;
   }
   

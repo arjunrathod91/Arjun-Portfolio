@@ -1,142 +1,98 @@
 .projects {
-  height: 500vh;
+  padding: 20px 0;
   width: 100vw;
-  background-color: rgb(5, 30, 68);
   display: flex;
   flex-direction: column;
+  justify-content:start;
   align-items: center;
-  overflow: hidden;
-  /*I can increase the lenght with help of leght of array*/
+  background-color: rgb(46, 46, 46);
+  color: white;
 }
+
 .projects .heading {
-  color: aqua;
-  font-size: 3.5rem;
-  margin-top: 20px;
+  font-size: 48px;
 }
-.line {
-  height: 7px;
-  width: 80%;
-  background-color: aqua;
-  margin-top: 15px;
-}
-.proj-head {
-  width: 100%;
-  height: 150px;
+
+.project-div{
+  width: 90%;
+  margin-top: 50px;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.proj-cont {
-  height: 50%;
-  width: 80%;
-  margin-bottom: 20px;
-  margin-top: 60px;
-  display: flex;
-  gap: 10px;
-  box-shadow: 0 0 4px rgb(59, 239, 255);
-}
-.proj-img {
-  height: 80%;
-  width: 49%;
-  margin-top: 32px;
+  gap: 40px;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  display: flex;
 }
-.proj-img img {
-  height: 80%;
-  width: 80%;
-  border: 1px solid white;
-}
-.proj-info {
-  height: 100%;
-  width: 51%;
+.proj-cont {
+  height: 450px;
+  width: 350px;
+  background-color: rgba(99, 99, 99, 0.718);
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  border-radius: 5px;
+  padding: 20px;
+  gap: 10px;
+  position: relative;
+}
+.proj-img {
+  height: 160px;
+  width: 100%;
+  border-radius: 5px;
+}
+.proj-img img{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+
+}
+.proj-info {
+  gap: 20px;
+}
+.proj-info p{
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .proj-info .btn {
-  padding: 0.4rem 0.8rem;
-  background-color: rgb(255, 206, 45);
-  font-size: 15px;
-  font-weight: bold;
+  padding: 5px 10px;
+  background-color: rgba(110, 110, 110, 0.651);
   border-radius: 5px;
-  width: 100px;
-  color: white;
 }
 .button{
   display: flex;
+  width: 100%;
   gap: 20px;
+  justify-content: start;
+  align-items: center;
+  margin-top: 10px;
+  position: absolute;
+  padding: 15px;
+  bottom: 0;
+  left: 0;
 }
 .proj-info .btn:hover {
-  color: white;
-  background-color: rgb(229, 188, 43);
+  background-color: rgba(32, 32, 32, 0.43);
 }
 .proj-info strong {
-  font-size: 2.5rem;
-  color: white;
-  margin-top: 50px;
+  font-weight: 400;
+
 }
 .icons{
   display: flex;
-  gap: 20px;
-  margin-top: 20px;
+  gap: 10px;
+  margin-top: 10px;
 }
 .icons img{
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
 }
 .proj-info p {
-  font-size: 1rem;
-  color: white;
-  padding: 5px;
+
 }
 @media only screen and (max-width: 600px) {
-    .projects .heading {
-        color: aqua;
-        font-size: 2.5rem;
-        margin-top: 18px;
-      }
-  .proj-cont {
-    flex-direction: column;
-    padding: 10px;
-  }
-  .proj-img{
-    height: 35%;
-    width: 100%;
-  }
-  .proj-info{
-    height: 85%;
-    width: 100%;
-  }
-  .projects .line{
-    height: 1px;
-    margin-top: 4px;
-    width: 40%;
-    margin-right: 20px;
-  }
-  .proj-img img {
-    height: 100%;
-    width: 100%;
-  }
-  .proj-info {
+    
 
-  }
-  .proj-info strong {
-    font-size: 1.5rem;
-    margin-top: 20px;
-    color: white;
-  }
-  .proj-info p {
-    font-size: 0.8rem;
-    color: white;
-  }
-  .proj-info .btn {
-    padding: 3px 5px;
-    background-color: orange;
-    font-size: 0.9rem;
-    font-weight: bold;
-    border-radius: 5px;
-    width: 80px;
-  }
 }

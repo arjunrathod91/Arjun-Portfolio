@@ -1,23 +1,22 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import Sidebar from "../Sidebar/Sidebar";
+import { Close } from "@mui/icons-material";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const [active,setActive] = useState(false)
-  const [done,setDone] = useState('active')
+  const [active, setActive] = useState(false);
+  const [done, setDone] = useState("active");
 
-  const clicked=()=>{
-    setOpen(!open)
-    if(open){
-      console.log("clicked")
+  const clicked = () => {
+    setOpen(!open);
+    if (open) {
+      console.log("clicked");
+    } else {
+      console.log("not clicked");
     }
-    else{
-      console.log('not clicked')
-    }
-
-  }
+  };
 
   return (
     <div className="navbar flex">
@@ -44,11 +43,17 @@ function Navbar() {
         </ul>
       </div>
       <div class="menu-toggle" onClick={clicked}>
-        <div class="menubar"></div>
-        <div class="menubar"></div>
-        <div class="menubar"></div>
+        {!open ? (
+          <>
+            <div class="menubar"></div>
+            <div class="menubar"></div>
+            <div class="menubar"></div>
+          </>
+        ) : (
+          <Close sx={{fontSize:'30px'}}/>
+        )}
       </div>
-      {open  && <Sidebar open={open} setOpen={setOpen}/>}
+      {open && <Sidebar open={open} setOpen={setOpen} />}
     </div>
   );
 }
