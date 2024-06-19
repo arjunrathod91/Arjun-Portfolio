@@ -34,7 +34,6 @@ ul{
 .links a:hover{
     color: rgb(0, 0, 0);
     font-weight: 500;
-    transform: scale(1.2);
 }
 a{
     text-decoration: none;
