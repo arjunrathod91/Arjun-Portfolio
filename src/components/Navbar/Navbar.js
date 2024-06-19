@@ -34,7 +34,7 @@ function Navbar() {
           </li>
         </ul>
       </div>
-      <div class="menu-toggle" onClick={clicked}>
+      <div class="menu-toggle" onClick={()=>setOpen(!open)}>
         {!open ? (
           <>
             <div class="menubar"></div>
