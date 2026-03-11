@@ -9,18 +9,6 @@ import Footer from "../Footer/Footer";
 import FilePresentIcon from '@mui/icons-material/FilePresent';
 
 function Home() {
-  // const el = useRef(null);
-
-  // useEffect(() => {
-  //   const typed = new Typed(el.current, {
-  //     strings: ["<i>Frontend Devloper</i>", "<i>Backend Devloper</i>","<i>Full Stack Devloper</i>"],
-  //     typeSpeed: 50,
-  //   });
-
-  //   return () => {
-  //     typed.destroy();
-  //   };
-  // }, []);
 
   return (
     <div id="home">
@@ -29,7 +17,6 @@ function Home() {
         <div
           className="left"
         >
-          {/* ref={el}  */}
           <strong>
           Hii It's Me 
           
@@ -43,7 +30,7 @@ function Home() {
           </p>
           <div className="buttons">
             <a href="https://github.com/arjunrathod91"><GitHubIcon/> GitHub</a>
-            <a href="https://drive.google.com/file/d/1Mu6hh7ww4IoTqZndaHNmn7N-EhK57a9n/view?usp=drive_link">
+            <a href="https://drive.google.com/file/d/1NHIKvHtgj-Yfs8p6cxvg_SC_bTFCyVVK/view?usp=drive_link">
               <FilePresentIcon/>Resume
             </a>
           </div>
@@ -59,7 +46,6 @@ function Home() {
       <Projects />
       <Contact />
       <Footer />
-      {/* <Education /> */}
       {/* <Skills />
       <Services/>
       <Review/>
