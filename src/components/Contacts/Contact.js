@@ -11,7 +11,6 @@ function Contact() {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
 
-  const ref = useRef();
   const formRef = useRef();
 
   const sendEmail = (e) => {
