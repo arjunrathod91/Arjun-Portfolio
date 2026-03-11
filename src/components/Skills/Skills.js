@@ -34,14 +34,6 @@ function Skills() {
       img: "https://cdn-icons-png.flaticon.com/128/919/919851.png",
     },
     {
-      title: "Next",
-      img: "https://th.bing.com/th/id/OIP.d-cssZMmcDWJU_yKxt9abQHaFQ?rs=1&pid=ImgDetMain",
-    },
-    {
-      title: "Vue",
-      img: "https://th.bing.com/th/id/OIP.xUOSgI0zAbQPrErd1QQiZQHaGZ?rs=1&pid=ImgDetMain",
-    },
-    {
       title: "Figma",
       img: "https://cdn-icons-png.flaticon.com/512/5968/5968705.png",
     },
@@ -57,10 +49,10 @@ function Skills() {
     //   title: "Shadcn",
     //   img: "https://avatars.githubusercontent.com/u/139895814?s=280&v=4",
     // },
-    // {
-    //   title: "Material UI",
-    //   img: "https://th.bing.com/th/id/OIP.mORoWuR07reOuNwUkcA8SgAAAA?rs=1&pid=ImgDetMain",
-    // },
+    {
+      title: "Material UI",
+      img: "https://th.bing.com/th/id/OIP.mORoWuR07reOuNwUkcA8SgAAAA?rs=1&pid=ImgDetMain",
+    },
   ];
 
   const backend = [
@@ -129,10 +121,10 @@ function Skills() {
   //   },
   // ];
   const Other = [
-    {
-      title: "Visual Studio Code",
-      img: "https://th.bing.com/th/id/OIP.PEsu4Jw9kb-jeGjGCYlppwHaHa?w=163&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-    },
+    // {
+    //   title: "Visual Studio Code",
+    //   img: "https://th.bing.com/th/id/OIP.PEsu4Jw9kb-jeGjGCYlppwHaHa?w=163&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+    // },
     // {
     //   title: "Netlify",
     //   img: "https://th.bing.com/th/id/OIP.OzH3GxFfwZzmf5YAofUkSgAAAA?w=207&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
@@ -182,7 +174,7 @@ function Skills() {
           className="flex flex-col justify-start items-center"
           style={{ margin: "20px", borderRadius: "10px" }}
         >
-          <strong className="text-2xl mt-[20px]">Languages</strong>
+          <strong className="text-2xl mt-[20px]">Programming Languages</strong>
           <div className="box">
             {languages.map((item) => (
               <div item={item} className="box1">
@@ -209,7 +201,7 @@ function Skills() {
           className="flex flex-col justify-start items-center"
           style={{ margin: "20px", borderRadius: "10px" }}
         >
-          <strong className="text-2xl mt-[20px]">Others</strong>
+          <strong className="text-2xl mt-[20px]">Tools</strong>
           <div className="box">
             {Other.map((item) => (
               <div item={item} className="box1">

@@ -63,7 +63,7 @@ a{
         z-index: 1; */
     }
     .navbar{
-        justify-content: end;
+        justify-content: flex-end;
 
     }
     .navbar .heading p{
