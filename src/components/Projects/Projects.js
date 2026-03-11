@@ -1,7 +1,5 @@
 import React from "react";
 import "./Projects.css";
-import { motion } from "framer-motion";
-import Skills from "../Skills/Skills";
 
 function Projects() {
   const projects = [

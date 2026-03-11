@@ -1,28 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
-import Typed from "typed.js";
+import React from "react";
 import "./Home.css";
 import Navbar from "../Navbar/Navbar";
-import Card from "../Card/Card";
 import Contact from "../Contacts/Contact";
 import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
-import { animate, motion } from "framer-motion";
-import Cursor from "../Cursor/Cursor";
-import Education from "../Education/Education";
-import { Link } from "react-router-dom";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Footer from "../Footer/Footer";
-import Sidebar from "../Sidebar/Sidebar";
-import Educations from "../Educations/Educations";
-import { GitHub } from "@mui/icons-material";
-import DescriptionIcon from '@mui/icons-material/Description';
 import FilePresentIcon from '@mui/icons-material/FilePresent';
-import AttachFileIcon from '@mui/icons-material/AttachFile';
-import Services from "../Services/Services";
-import Review from "../Reviews/Review";
 
 function Home() {
   // const el = useRef(null);

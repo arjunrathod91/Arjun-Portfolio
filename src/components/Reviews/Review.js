@@ -41,7 +41,7 @@ function Review() {
             {reviews.map((item,index)=>(
                 <div key={index} className={`review-box ${index === currentCardIndex ? 'active' : ''}`} >
                     <div style={{display:'flex',gap:'20px',justifyContent:'start',alignItems:'center'}}>
-                        <img src={item.img}/> 
+                        <img src={item.img} alt={item.author}/> 
                         <strong>{item.author}</strong>
                     </div>
                     <p>{item.desc}</p>

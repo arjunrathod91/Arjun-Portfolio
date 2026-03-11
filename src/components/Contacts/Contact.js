@@ -1,12 +1,9 @@
 import React, { useState, useRef } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
-import Cursor from "../Cursor/Cursor";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { Link } from "react-router-dom";
 
 function Contact() {
   // const [contact, setContact] = useState(false);

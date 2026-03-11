@@ -1,7 +1,5 @@
 import React from "react";
 import "./Skills.css";
-import { motion } from "framer-motion";
-import { Opacity } from "@mui/icons-material";
 
 function Skills() {
   const languages = [

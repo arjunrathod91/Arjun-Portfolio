@@ -1,6 +1,5 @@
 import React from "react";
 import "./Educations.css";
-import { motion } from "framer-motion";
 
 function Educations() {
   const education = [

@@ -25,7 +25,7 @@ function Services() {
       <div className="serv-box">
         {services.map((item, index) => (
           <div className="box" key={index}>
-            <img src={item.img} />
+            <img src={item.img} alt={item.title}/>
             <div style={{display:'flex',flexDirection:'column',gap:'10px'}}>
               <strong style={{ color: "white" }}>{item.title}</strong>
               <p>{item.exp}</p>
