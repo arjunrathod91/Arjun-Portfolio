@@ -5,7 +5,7 @@ function Projects() {
   const projects = [
     {
       title: "Pizza Point",
-      desc: "Pizza Point is a food ordering website where user can scroll and order thier favourite food easily. I built this website with MERN stack. Also have a payment integration in it with help of Razorpay.",
+      desc: "Pizza Point is a full-stack food ordering website built using the MERN stack that allows users to browse and order food easily. It includes user authentication, cart management, and an admin panel, along with Razorpay payment integration for secure & flexible payments.",
       img: "/Projects/pizzapoint.png",
       github: "https://github.com/arjunrathod91/pizzapointnew",
       demo: "https://pizzapointnew.vercel.app/",
@@ -24,7 +24,7 @@ function Projects() {
       demo: "https://ishopstore-ecommerce.onrender.com/",
       skill: [
         "https://cdn-icons-png.flaticon.com/128/919/919851.png", //react
-        "https://cdn-icons-png.flaticon.com/128/919/919825.png", 
+        "https://cdn-icons-png.flaticon.com/128/919/919825.png",
         "https://th.bing.com/th/id/OIP.1fZjQpkRMKTBGN_7H5YnFwHaGL?rs=1&pid=ImgDetMain", //express
         "https://www.liblogo.com/img-logo/mo429m311-mongodb-logo-mongodb-logo-.png", //moongodb
 
@@ -39,7 +39,7 @@ function Projects() {
       demo: "https://logisticsapp-nine.vercel.app/",
       skill: [
         "https://cdn-icons-png.flaticon.com/128/919/919851.png", //react
-        "https://cdn-icons-png.flaticon.com/128/919/919825.png", 
+        "https://cdn-icons-png.flaticon.com/128/919/919825.png",
         "https://th.bing.com/th/id/OIP.1fZjQpkRMKTBGN_7H5YnFwHaGL?rs=1&pid=ImgDetMain", //express
         "https://www.liblogo.com/img-logo/mo429m311-mongodb-logo-mongodb-logo-.png", //moongodb
 
@@ -58,7 +58,7 @@ function Projects() {
     //     "https://cdn-icons-png.flaticon.com/128/5968/5968292.png",
     //   ],
     // },
-      {
+    {
       title: "Ichatapp",
       desc: "Ichatapp is a website where two or multiple users can express their thoughts and chat on a single server. I build this website with help of simple Html,Css, Javascript and for server-side i used node js. For communicating with servers I used Socket.io.",
       img: "/Projects/Ichatapp.png",
@@ -74,7 +74,7 @@ function Projects() {
     },
     {
       title: "Remote Connect",
-      desc: "Remote Connect is website I build with in a hackthon compitition with my team senior.",
+      desc: "Remote Connect is a website developed during a hackathon in collaboration with a senior teammate. The platform aims to connect rural students with skill-building opportunities and income sources, and I contributed to building the frontend using HTML, CSS, and JavaScript.",
       img: "/Projects/remoteconnect.png",
       github: "https://github.com/arjunrathod91/Remote_Connect",
       demo: "https://arjunrathod91.github.io/Remote_Connect/",
@@ -98,7 +98,7 @@ function Projects() {
         "https://th.bing.com/th/id/OIP.1fZjQpkRMKTBGN_7H5YnFwHaGL?rs=1&pid=ImgDetMain" //express
       ],
     },
-      {
+    {
       title: "NoteApp",
       desc: "Noteapp is a website with a very simple note design. Where user can store his short or long notes in thier localstorage. I also tried to integrate a date and time functionality.",
       img: "/Projects/noteapp.png",
@@ -115,7 +115,7 @@ function Projects() {
   return (
     <div className="projects" id="projects">
       <h2 className="heading">Projects</h2>
-      
+
       <div className="project-div">
         {projects.map((item) => (
           <div
@@ -133,7 +133,7 @@ function Projects() {
                   <img src={icon} alt="" />
                 ))}
               </div>
-              <p>{item.desc.substring(0,290)}</p>
+              <p>{item.desc.substring(0, 290)}</p>
               <div className="button">
                 <button className="btn">
                   <a href={item.github}>Github</a>
