@@ -61,11 +61,11 @@ function Contact() {
                 <GitHubIcon />
               </a>
             </p>
-            <p>
+            {/* <p>
               <a href="https://github.com/arjunrathod91">
                 <FacebookIcon />
               </a>
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="cont-inp">

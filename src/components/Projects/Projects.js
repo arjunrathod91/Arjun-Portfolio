@@ -9,7 +9,7 @@ function Projects() {
       title: "Pizza Point",
       desc: "Pizza Point is a food ordering website where user can scroll and order thier favourite food easily. I built this website with MERN stack. Also have a payment integration in it with help of Razorpay.",
       img: "/Projects/pizzapoint.png",
-      github: "https://github.com/arjunrathod91/chatapp",
+      github: "https://github.com/arjunrathod91/pizzapointnew",
       demo: "https://pizzapointnew.vercel.app/",
       skill: [
         "https://cdn-icons-png.flaticon.com/128/919/919851.png", //react

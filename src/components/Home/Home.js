@@ -55,12 +55,11 @@ function Home() {
           <br />
           <span className="role">Full Stack Web Developer</span> <br />
           <p className="para">
-            Strong interest in web development and programming. Looking for a Web
-            Developer position.
+            Strong foundation in web development and programming. Seeking a Web Developer role to build scalable applications and grow as a software engineer.
           </p>
           <div className="buttons">
             <a href="https://github.com/arjunrathod91"><GitHubIcon/> GitHub</a>
-            <a href="https://drive.google.com/file/d/1L421HwwptPHufwkeg9gLjFcxl_KlJC9L/view">
+            <a href="https://drive.google.com/file/d/1Mu6hh7ww4IoTqZndaHNmn7N-EhK57a9n/view?usp=drive_link">
               <FilePresentIcon/>Resume
             </a>
           </div>
@@ -72,10 +71,10 @@ function Home() {
       <Skills />
       {/* <Services/> */}
       {/* <Review/> */}
+      {/* <Educations/> */}
       <Projects />
       <Contact />
       <Footer />
-      {/* <Educations/> */}
       {/* <Education /> */}
       {/* <Skills />
       <Services/>

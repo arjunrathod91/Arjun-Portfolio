@@ -16,9 +16,9 @@ function Navbar() {
           <li>
             <a href="/">Home</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#educations">Education</a>
-          </li>
+          </li> */}
           <li>
             <a href="#skills">Skills</a>
           </li>

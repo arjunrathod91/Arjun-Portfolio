@@ -156,20 +156,6 @@ function Skills() {
           className="flex flex-col justify-start items-center"
           style={{ margin: "20px", borderRadius: "10px" }}
         >
-          <strong className="text-2xl mt-[20px]">Languages</strong>
-          <div className="box">
-            {languages.map((item) => (
-              <div item={item} className="box1">
-                <img src={item.img} alt="" />
-                {/* <p>{item.title}</p> */}
-              </div>
-            ))}
-          </div>
-        </div>
-        <div
-          className="flex flex-col justify-start items-center"
-          style={{ margin: "20px", borderRadius: "10px" }}
-        >
           <strong className="text-2xl mt-[20px]">FrontEnd</strong>
           <div className="box">
             {frontend.map((item) => (
@@ -187,6 +173,20 @@ function Skills() {
           <strong className="text-2xl mt-[20px]">Backend</strong>
           <div className="box">
             {backend.map((item) => (
+              <div item={item} className="box1">
+                <img src={item.img} alt="" />
+                {/* <p>{item.title}</p> */}
+              </div>
+            ))}
+          </div>
+        </div>
+        <div
+          className="flex flex-col justify-start items-center"
+          style={{ margin: "20px", borderRadius: "10px" }}
+        >
+          <strong className="text-2xl mt-[20px]">Languages</strong>
+          <div className="box">
+            {languages.map((item) => (
               <div item={item} className="box1">
                 <img src={item.img} alt="" />
                 {/* <p>{item.title}</p> */}
