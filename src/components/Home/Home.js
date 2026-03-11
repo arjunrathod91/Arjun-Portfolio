@@ -70,7 +70,7 @@ function Home() {
         </div>
       </div>
       <Skills />
-      <Services/>
+      {/* <Services/> */}
       {/* <Review/> */}
       <Projects />
       <Contact />

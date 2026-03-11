@@ -20,7 +20,7 @@
   width: 500px;
   gap: 20px;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: center;
   align-items: start;
   padding: 20px 50px;
 }
