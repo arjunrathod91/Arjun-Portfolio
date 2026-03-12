@@ -1,0 +1,41 @@
+.services{
+    padding: 50px 0;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services h2{
+    font-size: 48px;
+    color: white;
+}
+.serv-box{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.serv-box .box{
+    height: 300px;
+    text-align: center;
+    width: 300px;
+    border-radius: 5px;
+    background-color: rgba(80, 80, 80, 0.74);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.serv-box .box img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.serv-box .box p{
+    color: white;
+    font-size: 12px;
+}

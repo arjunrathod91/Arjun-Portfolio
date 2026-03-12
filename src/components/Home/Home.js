@@ -1,84 +1,62 @@
-import React, { useEffect, useRef, useState } from "react";
-import Typed from "typed.js";
+import React from "react";
 import "./Home.css";
 import Navbar from "../Navbar/Navbar";
-import Card from "../Card/Card";
 import Contact from "../Contacts/Contact";
 import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
-import { animate, motion } from "framer-motion";
-import Cursor from "../Cursor/Cursor";
-import Education from "../Education/Education";
-import { Link } from "react-router-dom";
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from "@mui/icons-material/GitHub";
+import Footer from "../Footer/Footer";
+import FilePresentIcon from '@mui/icons-material/FilePresent';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLeetcode } from "@fortawesome/free-brands-svg-icons";
 
 function Home() {
-    const el = useRef(null);
-  const newVariant = {
-    initial: {
-      x: -500,
-      opacity: 0,
-    },
-    animate: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        duration: 1,
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-useEffect(() => {
-    const typed = new Typed(el.current, {
-      strings: ['<i>Web Devloper</i>','<i>Web Designer</i>'],
-      typeSpeed: 50,
-    });
-
-    return () => {
-      typed.destroy();
-    };
-  }, []);
-
 
   return (
-    <div>
+    <div id="home">
       <Navbar />
-      <div className="hero space-around flex">
+      <div className="hero">
         <div
           className="left"
-          // variants={newVariant}
-          // initial="initial"
-          // // animate="animate"
-          // whileInView="animate"
         >
           <strong>
-            {/* <span className="name">Arjun Rathod</span> */}
-            Hii It's Me  <span className="name">Arjun Rathod</span>
-          </strong>
+          Hii It's Me 
+          
           <br/>
-          <span ref={el} className="role"></span>
-            <p className="para">
-              Strong interest in web development and programming.Looking for a
-              Web Developer position.
-            </p>
-            <div className="buttons">
-              <a href="https://github.com/arjunrathod91">Github</a>
-              <a href="https://arjunrathod91.github.io/Portfolio_Website/Accets/Arjun%20Rathod%20Intern%20Web%20Devloper.pdf">Resume</a>
-            </div>
+          <span className="name">Arjun Rathod</span>
+          </strong>
+          <br />
+          <span className="role">Full Stack Web Developer</span> <br />
+          <p className="para">
+            Strong foundation in web development and programming. Seeking a Web Developer role to build scalable applications and grow as a software engineer.
+          </p>
+          <div className="buttons">
+            <a href="https://github.com/arjunrathod91"><GitHubIcon/> GitHub</a>
+            <a href="https://drive.google.com/file/d/1NHIKvHtgj-Yfs8p6cxvg_SC_bTFCyVVK/view?usp=drive_link">
+              <FilePresentIcon/>Resume
+            </a>
+            <a href="https://leetcode.com/u/arjunrathod">
+              <FontAwesomeIcon icon={faLeetcode} size="lg" style={{fontSize:'20px'}} />Leetcode
+            </a>
+          </div>
         </div>
         <div className="right">
-          <img src={"/Img/new.jpeg"} alt="" className="profile" />
+          <img src="Img/arjun rathod jpg.jpg" loading="lazy" alt="" className="hero-profile" />
         </div>
       </div>
-      <Education />
       <Skills />
+      {/* <Services/> */}
+      {/* <Review/> */}
+      {/* <Educations/> */}
       <Projects />
       <Contact />
-      
+      <Footer />
+      {/* <Skills />
+      <Services/>
+      <Review/>
+      <Projects />
+      <Contact />
+      <Footer /> */}
     </div>
   );
 }

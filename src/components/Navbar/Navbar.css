@@ -1,18 +1,24 @@
 .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 60px;
-    width: 100%;
-    /* width: 100vw; */
-    background-color: rgb(12, 13, 103);
+    width: 100vw;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 999;
+
 }
-.heading,.links{
+.heading{
     margin-left: 30px;
+}
+.links{
     margin-right: 50px;
 }
 .heading p{
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: 500;
 }
 
@@ -23,29 +29,29 @@ ul{
 }
 .links a{
     font-size: 1.2rem;
-    color: white;
+    color: rgb(127, 127, 127);
 }
-.active{
-    color: rgb(0, 183, 255);
+.links a:hover{
+    color: rgb(0, 0, 0);
+    font-weight: 500;
 }
 a{
     text-decoration: none;
-    color: black;
 }
 .menu-toggle{
     display: none;
 
 }
-.bar {
+.menubar {
     width: 25px;
     height: 3px;
-    background-color: #ffffff;
+    background-color: #000000;
     margin: 4px 0;
   }
   
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 623px) {
     .links{
-        visibility: hidden;
+        display: none;
     }
     .profile{
         height: 150px;
@@ -57,17 +63,16 @@ a{
         z-index: 1; */
     }
     .navbar{
-        position: relative;
-        width: 100%;
+        justify-content: flex-end;
 
     }
     .navbar .heading p{
-        position: absolute;
+        /* position: absolute;
         top: 0;
-        right: 0;
-        margin-right: 100px;
+        right: 0; */
         font-size: 1.2rem;
         font-weight: 500;
+        margin-right: 50px;
     }
     .menu-toggle{
         display: block;
