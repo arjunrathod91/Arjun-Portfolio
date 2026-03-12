@@ -7,6 +7,8 @@ import Skills from "../Skills/Skills";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Footer from "../Footer/Footer";
 import FilePresentIcon from '@mui/icons-material/FilePresent';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLeetcode } from "@fortawesome/free-brands-svg-icons";
 
 function Home() {
 
@@ -32,6 +34,9 @@ function Home() {
             <a href="https://github.com/arjunrathod91"><GitHubIcon/> GitHub</a>
             <a href="https://drive.google.com/file/d/1NHIKvHtgj-Yfs8p6cxvg_SC_bTFCyVVK/view?usp=drive_link">
               <FilePresentIcon/>Resume
+            </a>
+            <a href="https://leetcode.com/u/arjunrathod">
+              <FontAwesomeIcon icon={faLeetcode} size="lg" style={{fontSize:'20px'}} />Leetcode
             </a>
           </div>
         </div>
